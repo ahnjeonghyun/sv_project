@@ -1,12 +1,12 @@
-#language_type, movie_url# LANGUAGE
-ko,https://youtu.be/Q_9cFgzZr8Q
-en,https://youtu.be/Q_9cFgzZr8Q
-ru,https://youtu.be/Q_9cFgzZr8Q
-th,https://youtu.be/Q_9cFgzZr8Q
-tu,https://youtu.be/Q_9cFgzZr8Q
-po,https://youtu.be/Q_9cFgzZr8Q
-zh,https://youtu.be/Q_9cFgzZr8Q
-jp,https://youtu.be/Q_9cFgzZr8Q
+#id,language_type, movie_url# LANGUAGE
+1,ko,https://www.youtube.com/embed/MUpcv_QCA4Y
+2,en,https://www.youtube.com/embed/MUpcv_QCA4Y
+3,ru,https://www.youtube.com/embed/MUpcv_QCA4Y
+4,th,https://www.youtube.com/embed/MUpcv_QCA4Y
+5,tu,https://www.youtube.com/embed/MUpcv_QCA4Y
+6,po,https://www.youtube.com/embed/MUpcv_QCA4Y
+7,zh,https://www.youtube.com/embed/MUpcv_QCA4Y
+8,jp,https://www.youtube.com/embed/MUpcv_QCA4Y
 
 ge_url, mo_reward_name, pc_reward_name, reward_rate # REWARD
 1,"https://image.shutterstock.com/image-vector/shield-icon-health-insurance-vector-600w-1928066987.jpg","https://image.shutterstock.com/image-vector/vector-money-icon-260nw-383808184.jpg",mo_name1,pc_name1,0.5

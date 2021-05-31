@@ -68,13 +68,14 @@ class User(AsyncWebsocketConsumer):
             "status" : text
         }, ensure_ascii = False))
     
-    # async def result_message(self, event):
-    #     text = event["status"]
+    async def result_message(self, event):
+        pass
+        # text = event["status"]
 
-    #     await self.send(json.dumps({
-    #         "type"   : "result_message",
-    #         "status" : text
-    #     }, ensure_ascii = False))
+        # await self.send(json.dumps({
+        #     "type"   : "result_message",
+        #     "status" : text
+        # }, ensure_ascii = False))
 
 
     # @database_sync_to_async

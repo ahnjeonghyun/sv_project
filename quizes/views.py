@@ -75,7 +75,6 @@ class AnswerCheckView(View):
     @user_check
     def post(self, request):
         data     = json.loads(request.body)
-        print(data)
         user     = request.user
         answer   = data.get('answer',None)
         quiz_num = Quiz.objects.get(quiz_seq = data['quiz_num'],language_id = user.language_id)
