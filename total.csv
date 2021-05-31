@@ -1,0 +1,49 @@
+#language_type, movie_url# LANGUAGE
+ko,https://youtu.be/Q_9cFgzZr8Q
+en,https://youtu.be/Q_9cFgzZr8Q
+ru,https://youtu.be/Q_9cFgzZr8Q
+th,https://youtu.be/Q_9cFgzZr8Q
+tu,https://youtu.be/Q_9cFgzZr8Q
+po,https://youtu.be/Q_9cFgzZr8Q
+zh,https://youtu.be/Q_9cFgzZr8Q
+jp,https://youtu.be/Q_9cFgzZr8Q
+
+ge_url, mo_reward_name, pc_reward_name, reward_rate # REWARD
+1,"https://image.shutterstock.com/image-vector/shield-icon-health-insurance-vector-600w-1928066987.jpg","https://image.shutterstock.com/image-vector/vector-money-icon-260nw-383808184.jpg",mo_name1,pc_name1,0.5
+2,"https://image.shutterstock.com/image-vector/shield-icon-health-insurance-vector-600w-1928066987.jpg","https://image.shutterstock.com/image-vector/vector-money-icon-260nw-383808184.jpg",mo_name2,pc_name2,0.5
+3,"https://image.shutterstock.com/image-vector/shield-icon-health-insurance-vector-600w-1928066987.jpg","https://image.shutterstock.com/image-vector/vector-money-icon-260nw-383808184.jpg",mo_name3,pc_name3,0.4
+4,"https://image.shutterstock.com/image-vector/shield-icon-health-insurance-vector-600w-1928066987.jpg","https://image.shutterstock.com/image-vector/vector-money-icon-260nw-383808184.jpg",mo_name4,pc_name4,0.3
+5,"https://image.shutterstock.com/image-vector/shield-icon-health-insurance-vector-600w-1928066987.jpg","https://image.shutterstock.com/image-vector/vector-money-icon-260nw-383808184.jpg",mo_name5,pc_name5,0.3
+6,"https://image.shutterstock.com/image-vector/shield-icon-health-insurance-vector-600w-1928066987.jpg","https://image.shutterstock.com/image-vector/vector-money-icon-260nw-383808184.jpg",mo_name6,pc_name6,0.2
+7,"https://image.shutterstock.com/image-vector/shield-icon-health-insurance-vector-600w-1928066987.jpg","https://image.shutterstock.com/image-vector/vector-money-icon-260nw-383808184.jpg",mo_name7,pc_name7,0.2
+8,"https://image.shutterstock.com/image-vector/shield-icon-health-insurance-vector-600w-1928066987.jpg","https://image.shutterstock.com/image-vector/vector-money-icon-260nw-383808184.jpg",mo_name8,pc_name8,0.1
+
+
+#language_id ,quiz_seq, content ,reward_id# QUIZ
+1,1,"제르베즈와 제노베바는 남매 관계이다.",1
+2,1,"Gervez and Genoveva are brother and sister.",2
+3,1,"Джервес и Дженовея - братья и сестры.",3
+4,1,"Jervez และ Genovea เป็นพี่น้องกัน",4
+5,1,"Jervez ve Genovea kardeşler.",5
+6,1,"Jervez e Genovea são irmãos.",6
+7,1,"耶尔维兹（Jervez）和热那亚（Genovea）是兄弟姐妹。",7
+8,1,"ジェルベジュとジェノベバは兄妹の関係である。",8
+
+
+#language_id , quiz_id , answer , answer_status, answer_seq # ANSWER
+1,1,O,False,1
+1,1,X,True,2
+2,1,O,False,1
+2,1,X,True,2
+3,1,O,False,1
+3,1,X,True,2
+4,1,O,False,1
+4,1,X,True,2
+5,1,O,False,1
+5,1,X,True,2
+6,1,O,False,1
+6,1,X,True,2
+7,1,O,False,1
+7,1,X,True,2
+8,1,O,False,1
+8,1,X,True,2
