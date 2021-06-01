@@ -2,10 +2,10 @@ import jwt
 import json
 import my_settings
 
-from django.views import View
-from django.http  import JsonResponse
+from django.views   import View
+from django.http    import JsonResponse
 
-from users.models import User, Language
+from users.models   import User, Language
 
 class SignupView(View):
     def post(self,request):

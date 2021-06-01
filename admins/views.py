@@ -3,13 +3,13 @@ import bcrypt
 import jwt
 import my_settings
 
-from django.views  import View
-from django.http   import JsonResponse
+from django.views     import View
+from django.http      import JsonResponse
 from django.db.models import Count
 
-from admins.models import Admin
-from quizes.models import Quiz, UserAnswer
-from users.models  import User, Language
+from admins.models    import Admin
+from quizes.models    import Quiz, UserAnswer
+from users.models     import User, Language
 
 class AdminSigninView(View):
     def post(self,request):
@@ -21,7 +21,7 @@ class AdminSigninView(View):
             if not bcrypt.checkpw(password.encode('utf-8'), admin.password.encode('utf-8') ):
                 return JsonResponse({'Message' : 'Invalid_paasword'}, status = 400)
             
-            encode_jwt = jwt.encode({'admin_id' : admin.id}, my_settings.SECRET_KEY['secret'], my_settings.ALGORITHM)
+            encode_jwt = jwt.encode({'admin_id' : admin.id,'language_id' : 1}, my_settings.SECRET_KEY['secret'], my_settings.ALGORITHM)
             return JsonResponse({'token' : encode_jwt}, status = 200)
 
         except KeyError:

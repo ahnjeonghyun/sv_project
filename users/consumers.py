@@ -17,10 +17,8 @@ class User(AsyncWebsocketConsumer):
 
         await self.accept()
 
-
     async def disconnect(self, event):
         await self.send({'message':'disconnect_websocket'})
-
 
     async def receive(self,text_data):
         data          = json.loads(text_data)
@@ -50,7 +48,6 @@ class User(AsyncWebsocketConsumer):
         }, ensure_ascii=False))
 
     async def quiz_message(self, event):
-        # print(event,"users")
         text     = event["status"]
         quiz_num = event["quiz_num"]
 

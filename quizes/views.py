@@ -44,11 +44,12 @@ class QuizLoadView(View):
     @user_check
     def get(self, request, quiz_num):
         try:
-            user = request.user
+            user     = request.user
+            language = request.language
 
             quiz = Quiz.objects.get(
                 quiz_seq    = quiz_num,
-                language_id = user.language_id
+                language_id = language
             )
 
             answers = quiz.answer_set.all()
@@ -68,6 +69,7 @@ class QuizLoadView(View):
 
         except KeyError:
             return JsonResponse({"Message":"KeyError"}, status = 400)
+
         except Quiz.DoesNotExist:
             return JsonResponse({'Message':'Quiz Does Not Exist'}, status = 400)
 

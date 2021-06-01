@@ -18,15 +18,12 @@ class QuizLoad(AsyncWebsocketConsumer):
 
         await self.accept()
 
-
     async def disconnect(self, event):
         await self.send({'message':'disconnect_websocket'})
-
 
     async def receive(self,text_data):
         data       = json.loads(text_data)
         status     = data.get('status',None)
-
 
     async def accept_message(self, event):
         text = event["status"]
@@ -37,7 +34,6 @@ class QuizLoad(AsyncWebsocketConsumer):
             "status" : text
         }, ensure_ascii = False))
     
-
     async def reward_message(self, event):
         text     = event["status"]
         quiz_num = event["quiz_num"]
@@ -47,10 +43,8 @@ class QuizLoad(AsyncWebsocketConsumer):
             "status"   : text,
             "quiz_num" : quiz_num
         }, ensure_ascii=False))    
-
     
     async def quiz_message(self, event):
-        print(event,"quizes")
         text     = event["status"]
         quiz_num = event["quiz_num"]
 

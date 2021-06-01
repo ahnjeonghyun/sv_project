@@ -24,14 +24,13 @@ class Admin(AsyncWebsocketConsumer):
 
     async def receive(self,text_data):
         data = json.loads(text_data)
-        print(data)
         status = data.get('status', None)
 
         if status == "입장허용":
             #group_message 함수로 event 생성
             await self.channel_layer.group_send(
                 self.group_name,{
-                "type" : "accept_message",     #type 값이 전송할 함수이름과 동일해야함
+                "type" : "accept_message",
                 "status" : status 
                 }
             )
@@ -116,8 +115,3 @@ class Admin(AsyncWebsocketConsumer):
             "type"   : "result_message",
             "status" : text
         }, ensure_ascii = False))
-
-    # @database_sync_to_async
-    # def get_chart(self,language,language_id):
-    #     pass
-        

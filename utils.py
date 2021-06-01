@@ -21,25 +21,26 @@ def user_check(func):
                     language_id = decoded_token['user_language'],
                     device_type = decoded_token['user_device_type']
                 )
+                request.language = user.language_id
                 request.user = user
 
                 return func(self, request, *args, **kwargs)
             
             elif decoded_token.get('admin_id',None):
 
-                user = User.objects.get(
+                user = Admin.objects.get(
                     id = decoded_token['admin_id'],
                 )
-
+                request.language = decoded_token['language_id']
                 request.user = user
 
                 return func(self, request, *args, **kwargs)
 
         except User.DoesNotExist:
-            return JsonResponse({"message":"UNKNOWN_USER"}, status = 401)
+            return JsonResponse({"message":"UNKNOWN_USER"}, status = 400)
 
         except KeyError:
-            return JsonResponse({"message":"INVALID_LOGIN"}, status = 401)
+            return JsonResponse({"message":"INVALID_LOGIN"}, status = 400)
 
         except jwt.DecodeError:
             return JsonResponse({"message":"INVALID_TOKEN"}, status = 401)
