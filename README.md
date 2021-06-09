@@ -4,7 +4,13 @@ Django Channels(websocket)를 이용한 실시간 퀴즈 프로그램
 
 - 프로젝트 기간: 2021년 05월 10일 ~ 2021년 06월 04일
 FrontEnd: 김효진, 박성은
-BackEnd : 안정현
+BackEnd : 안정현, 정재유(PM)
+
+## 구현한 기능
+- Admin 퀴즈 컨트롤
+- Admin 퀴즈 정답/오답 통계
+- User 퀴즈보상 안내
+- User 언어별 퀴즈내용,보상,영상 변경
 
 ## 🔧 기술 스택
 - ![Python](https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white)
@@ -20,10 +26,3 @@ BackEnd : 안정현
 
 ❗️ 레퍼런스
 이 프로젝트는 학습목적으로 만들었습니다. 실무수준의 프로젝트이지만 학습용으로 만들었기 때문에 이 코드를 활용하여 이득을 취하거나 무단 배포할 경우 법적으로 문제될 수 있습니다.
-
-
-
-
-
-
-
