@@ -1,8 +1,8 @@
 ##  프로젝트 소개
-Django Channels(websocket)을 이용한 실시간 퀴즈 프로그램
+Django Channels(websocket)를 이용한 실시간 퀴즈 프로그램
 
 - 프로젝트 기간: 2021년 05월 10일 ~ 2021년 06월 04일
-FrontEnd: 김효진, 박성은 
+FrontEnd: 김효진, 박성은
 BackEnd : 안정현
 
 ## 🔧 기술 스택
