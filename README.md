@@ -7,16 +7,13 @@ BackEnd : 안정현
 
 
 ### 안정현
-- `Product Category`
-    - Nav바 내의 카테고리의 리스트 기능 구현
-- `Order`
-    - 상품 장바구니 추가,삭제 기능 구현
+
    
 
 ## 🔧 기술 스택
 - ![Python](https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white)
 - ![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
-- ![Postgresql]()
+- ![Postgresql](https://img.shields.io/badge/Postgresql-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
 
 ## 🔧 협업 도구
 - <img alt="Trello" src="https://img.shields.io/badge/Trello-%23026AA7.svg?&style=for-the-badge&logo=Trello&logoColor=white"/>
