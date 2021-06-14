@@ -6,7 +6,7 @@ Django Channels(websocket)를 이용한 실시간 퀴즈 프로그램
   - FrontEnd: 김효진, 박성은
   - BackEnd : 안정현, 정재유(PM)
 
-## 구현한 기능
+## 🔧 구현한 기능
 User
 - 퀴즈 입장시 JWT를 이용해 발행된 Token 으로 User의 언어정보 확인 하여 언어의 맞는 영상 출력
 - Admin이 퀴즈를 컨트롤 시 User의 퀴즈 플로우 작동할 수 있게 구현
