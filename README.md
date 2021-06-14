@@ -3,14 +3,19 @@ Django Channels(websocket)를 이용한 실시간 퀴즈 프로그램
 실시간으로 영상에 송출되는 문제로 Admin이 직접 컨트롤하며 퀴즈가 진행되는 프로그램
 
 - 프로젝트 기간: 2021년 05월 10일 ~ 2021년 06월 04일
-FrontEnd: 김효진, 박성은
-BackEnd : 안정현, 정재유(PM)
+  - FrontEnd: 김효진, 박성은
+  - BackEnd : 안정현, 정재유(PM)
 
 ## 구현한 기능
-- Admin 퀴즈 컨트롤
-- Admin 퀴즈 정답/오답 통계
-- User 퀴즈보상 안내
-- User 언어별 퀴즈내용,보상,영상 변경
+User
+- 퀴즈 입장시 JWT를 이용해 발행된 Token 으로 User의 언어정보 확인 하여 언어의 맞는 영상 출력
+- Admin이 퀴즈를 컨트롤 시 User의 퀴즈 플로우 작동할 수 있게 구현
+- 퀴즈의 정보 API를 줄 때 정답여부와 같이 발송 하여 실시간 정답/오답 여부 확인 할 수 있도록 구현
+- 퀴즈의 대한 보상내역 기능 구현
+
+Admin
+- Admin이 퀴즈 플로우를 컨트롤 할 수 있게 구현
+- Admin이 실시간 으로 유저의 퀴즈 정답/오답/언어/플랫폼 통계 확인 할수 있는 기능 구현
 
 ## 🔧 기술 스택
 - ![Python](https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white)
